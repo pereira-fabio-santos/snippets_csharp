@@ -1,0 +1,74 @@
+{
+  "Escrever texto": {
+    "prefix": "escrever_texto",
+    "body": "Console.WriteLine(\"${1:Texto}\");$0",
+    "description": "Escreve um texto no console"
+  },
+  "Numero inteiro": {
+    "prefix": "inteiro",
+    "body": "int ${1:Nome_da_variável} = ${2:valor_default};$0",
+    "description": "Declara uma variável para guardar numeros inteiros"
+  },
+  "Numero decimal": {
+    "prefix": "decimal",
+    "body": "float ${1:Nome_da_variável} = ${2:valor_default};$0",
+    "description": "Declara uma variável para guardar valores com casa decimal"
+  },
+  "Letra": {
+    "prefix": "letra",
+    "body": "char ${1:Nome_da_variável} = '${2:caractere_default}';$0",
+    "description": "Declara uma variável para guardar somente um caractere"
+  },
+  "Texto": {
+    "prefix": "texto",
+    "body": "string ${1:Nome_da_variável} = \"${2:valor_default}\";$0",
+    "description": "Declara uma variável para guardar um texto"
+  },
+  "Data": {
+    "prefix": "data",
+    "body": "DateTime ${1:Nome_da_variável} = DateTime.Now;$0",
+    "description": "Declara uma variável para guardar data"
+  },
+  "Booleano": {
+    "prefix": "booleano",
+    "body": "bool ${1:Nome_da_variável} = ${2:valor_default(true|false)};$0",
+    "description": "Declara uma variável para guardar um booleano"
+  },
+  "Lista": {
+    "prefix": "lista",
+    "body": "List<${1:int|float|char|string|DateTime|boolean|Classe}> ${2:Nome_da_variável} = new List<${1:int|float|char|string|DateTime|boolean|Classe}>();$0",
+    "description": "Declara uma lista"
+  },
+  "Array": {
+    "prefix": "array",
+    "body": "${1:int|float|char|string|DateTime|boolean|Classe}[] ${2:Nome_da_variável} = new ${1:int|float|char|string|DateTime|boolean|Classe}[0];$0",
+    "description": "Declara um array"
+  },
+  "Método": {
+    "prefix": "método",
+    "body": [
+      "${1:public|private|etc...} ${2: Retorno do método (string|int|classe|etc...)} ${3:Nome do método} (${4:argumentos... (tipo nome_da_variavel)})",
+      "{",
+      "\t// Código",
+      "\t$0",
+      "}"
+    ],
+    "description": "Declara um método"
+  },
+  "Classe": {
+    "prefix": "classe",
+    "body": [
+      "${1:public|private|etc...} class ${2: Nome da classe}",
+      "{",
+      "\t${1} ${2} ()",
+      "\t{",
+      "\t\t// Código do construtor", 
+      "\t}",
+      "",
+      "\t// Código da classe",
+      "\t$0",
+      "}"
+    ],
+    "description": "Declara uma classe"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "snippetscsharp",
+  "displayName": "Snippets C#",
+  "version": "1.0.12",
+  "categories": [
+    "Snippets"
+  ],
+  "author": {
+    "name": "Fabio Pereira dos Santos",
+    "email": "pereira.fabio.santos@outlook.com"
+  },
+  "publisher": "PereiraFabioSantos",
+  "readme": "README.md",
+  "description": "Code Snippets para a linguagem C#",
+  "keywords": [
+    "C#",
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "csharp",
+        "path": "snippets.json"
+      }
+    ]
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.22.0"
+  },
+  "devDependencies": {
+    "vsce": "2.15.0"
+  }
+}
