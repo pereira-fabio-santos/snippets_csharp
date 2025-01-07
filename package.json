@@ -5,11 +5,6 @@
   "categories": [
     "Snippets"
   ],
-  "author": {
-    "name": "Fabio Pereira dos Santos",
-    "email": "pereira.fabio.santos@outlook.com"
-  },
-  "publisher": "PereiraFabioSantos",
   "readme": "README.md",
   "description": "Code Snippets para a linguagem C#",
   "keywords": [
@@ -29,6 +24,12 @@
     "vscode": "^1.22.0"
   },
   "devDependencies": {
-    "vsce": "2.15.0"
+    "vsce": "2.15.0",
+    "commitizen": "4.3.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }
